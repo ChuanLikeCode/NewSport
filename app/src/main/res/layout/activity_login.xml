@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/login_title"
+        layout="@layout/actionbar_top" />
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/login_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/logo"/>
+    <RelativeLayout
+        android:id="@+id/activity_login_rlAccountAndPassword"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/login_logo"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_account"
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/icon_mobilephone" />
+
+        <View
+            android:id="@+id/view1_vertical"
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/iv_account"
+            android:background="@color/light_gray" />
+
+        <EditText
+            android:id="@+id/login_et_account"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/view1_vertical"
+            android:background="@null"
+            android:hint="请输入账号"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_hint_dark"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignStart="@id/view1_vertical"
+            android:layout_below="@id/login_et_account"
+            android:layout_marginTop="15dp"
+            android:background="@color/light_white" />
+
+        <ImageView
+            android:id="@+id/iv_password"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_alignStart="@id/iv_account"
+            android:layout_below="@id/view_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/icon_password" />
+
+        <View
+            android:id="@+id/view2_vertical"
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@id/view_horizontal"
+            android:layout_below="@id/view_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/iv_password"
+            android:background="@color/light_gray" />
+
+        <EditText
+            android:id="@+id/login_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_alignStart="@id/login_et_account"
+            android:layout_below="@id/view_horizontal"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/view2_vertical"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_hint_dark"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/activity_login_rlAccountAndPassword"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_btn_background"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/btn_login"
+        android:layout_below="@id/btn_login"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:text="免费注册"
+        android:textColor="@drawable/register_bg"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_resetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/btn_login"
+        android:layout_below="@id/btn_login"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="18dp"
+        android:text="忘记密码?"
+        android:textColor="@color/prompt_gray"
+        android:textSize="15sp" />
+
+</RelativeLayout>

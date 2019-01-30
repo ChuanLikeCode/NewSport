@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@drawable/dialog_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.sibo.fastsport.view.WhorlView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:WhorlView_BigWhorlColor="@color/turquoise"
+            app:WhorlView_CircleSpeed="270"
+            app:WhorlView_MiddleWhorlColor="@color/turquoise"
+            app:WhorlView_Parallax="fast"
+            app:WhorlView_SmallWhorlColor="@color/turquoise"
+            app:WhorlView_StrokeWidth="6"
+            app:WhorlView_SweepAngle="180" />
+
+        <TextView
+            android:id="@+id/dialog_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/loading"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

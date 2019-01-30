@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/guide_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/guide_point1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/yindao_icon_default" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/guide_point2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:src="@mipmap/yindao_icon_default" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/guide_point3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:src="@mipmap/yindao_icon_default" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/guide_start"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/guide_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/login_btn_background"
+        android:gravity="center"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+</RelativeLayout>

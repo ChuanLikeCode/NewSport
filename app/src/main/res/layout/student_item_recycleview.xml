@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/colorWindows"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:background="@color/white">
+
+        <com.sibo.fastsport.view.CircleImageView
+            android:id="@+id/student_item_touxiang"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/imagefirst" />
+
+        <TextView
+            android:id="@+id/student_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/student_item_touxiang"
+            android:layout_toRightOf="@id/student_item_touxiang"
+            android:text="小白"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/student_item_yundong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/student_item_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/student_item_name"
+            android:text="偶尔运动"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/content" />
+
+        <TextView
+            android:id="@+id/student_item_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/student_item_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/student_item_yundong"
+            android:text="肥胖型"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/content" />
+
+        <TextView
+            android:id="@+id/student_item_lastClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/student_item_touxiang"
+            android:layout_alignLeft="@id/student_item_name"
+            android:text="@string/last_class" />
+
+        <TextView
+            android:id="@+id/student_item_tv_lastClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/student_item_lastClass"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/student_item_lastClass"
+            android:text="11"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/student_item_completeClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/student_item_tv_lastClass"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/student_item_tv_lastClass"
+            android:text="@string/complete_class" />
+
+        <TextView
+            android:id="@+id/student_item_tv_completeClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/student_item_completeClass"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/student_item_completeClass"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/all_more_icon_03" />
+    </RelativeLayout>
+</RelativeLayout>

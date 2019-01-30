@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sibo.fastsport.ui.NewsActivity">
+
+    <RelativeLayout
+        android:id="@+id/news_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title">
+
+        <ImageView
+            android:id="@+id/news_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/newsTitle"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/wx_pfl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/news_rl" />
+
+    <com.sibo.fastsport.view.WhorlView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/news_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:WhorlView_BigWhorlColor="@color/turquoise"
+        app:WhorlView_CircleSpeed="270"
+        app:WhorlView_MiddleWhorlColor="@color/turquoise"
+        app:WhorlView_Parallax="fast"
+        app:WhorlView_SmallWhorlColor="@color/turquoise"
+        app:WhorlView_StrokeWidth="6"
+        app:WhorlView_SweepAngle="180" />
+
+</RelativeLayout>

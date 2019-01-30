@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lime_white"
+    tools:context="com.sibo.fastsport.ui.ChooseActionActivity">
+
+    <include
+        android:id="@+id/choose_title"
+        layout="@layout/activity_title_bar" />
+
+    <com.sibo.fastsport.view.WhorlView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:WhorlView_BigWhorlColor="@color/turquoise"
+        app:WhorlView_CircleSpeed="270"
+        app:WhorlView_MiddleWhorlColor="@color/turquoise"
+        app:WhorlView_Parallax="fast"
+        app:WhorlView_SmallWhorlColor="@color/turquoise"
+        app:WhorlView_StrokeWidth="6"
+        app:WhorlView_SweepAngle="180" />
+
+    <TextView
+        android:id="@+id/choose_action_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/choose_action_tips"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/choose_rll_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose_title"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/choose_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/choose_part"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/choose_part_down"
+            android:layout_width="14dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="9dp"
+            android:src="@mipmap/icon_choose" />
+
+        <TextView
+            android:id="@+id/choose_equipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/choose_equipment"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/choose_equipment_down"
+            android:layout_width="14dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="9dp"
+            android:src="@mipmap/icon_choose" />
+
+        <TextView
+            android:id="@+id/choose_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/choose_type"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/choose_type_down"
+            android:layout_width="14dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="9dp"
+            android:src="@mipmap/icon_choose" />
+
+        <TextView
+            android:id="@+id/choose_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/choose_level"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/choose_level_down"
+            android:layout_width="14dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="9dp"
+            android:src="@mipmap/icon_choose" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/choose_action_longClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose_rll_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="@string/longClickToShowDetail" />
+
+    <ListView
+        android:id="@+id/choose_action_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/choose_action_longClick"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+</RelativeLayout>

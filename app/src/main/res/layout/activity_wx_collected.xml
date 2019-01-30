@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wx_collected"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    tools:context="com.sibo.fastsport.ui.WxCollectedActivity">
+
+    <RelativeLayout
+        android:id="@+id/wxcollect_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title">
+
+        <ImageView
+            android:id="@+id/collected_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/collected_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/newsTitle"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/collected_listView"
+        android:layout_below="@id/wxcollect_rl"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/collected_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noCollection"
+        android:layout_centerInParent="true"/>
+
+    <com.sibo.fastsport.view.WhorlView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/collected_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:WhorlView_BigWhorlColor="@color/turquoise"
+        app:WhorlView_CircleSpeed="270"
+        app:WhorlView_MiddleWhorlColor="@color/turquoise"
+        app:WhorlView_Parallax="fast"
+        app:WhorlView_SmallWhorlColor="@color/turquoise"
+        app:WhorlView_StrokeWidth="6"
+        app:WhorlView_SweepAngle="180" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sibo.fastsport.widgets.MetaballMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/metaball_menu"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_gravity="bottom"
+
+    android:gravity="center"
+    android:orientation="horizontal"
+    app:backgroundColor="@color/title"
+    app:metaballColor="@android:color/white"
+    app:needsElevation="true">
+    <!--app:backgroundShapeRadius="30dp"-->
+    <com.sibo.fastsport.widgets.MetaballMenuImageView
+        android:id="@+id/menuPlan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        app:defaultImage="@mipmap/plan"
+        app:selectedImage="@mipmap/plan_focus" />
+
+
+    <com.sibo.fastsport.widgets.MetaballMenuImageView
+        android:id="@+id/menuStudent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        app:defaultImage="@mipmap/student"
+        app:selectedImage="@mipmap/student_focus" />
+
+    <com.sibo.fastsport.widgets.MetaballMenuImageView
+        android:id="@+id/menuMyhome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        app:defaultImage="@mipmap/wode"
+        app:selectedImage="@mipmap/wode_focus" />
+</com.sibo.fastsport.widgets.MetaballMenu>

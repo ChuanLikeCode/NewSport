@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.sibo.fastsport.view.WhorlView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        app:WhorlView_BigWhorlColor="@color/turquoise"
+        app:WhorlView_CircleSpeed="270"
+        app:WhorlView_MiddleWhorlColor="@color/turquoise"
+        app:WhorlView_Parallax="fast"
+        app:WhorlView_SmallWhorlColor="@color/turquoise"
+        app:WhorlView_StrokeWidth="5"
+        app:WhorlView_SweepAngle="180" />
+
+
+    <ImageView
+        android:id="@+id/dialog_iv_userCode"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/dialog_tv_userPlanName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp" />
+    <ImageView
+        android:id="@+id/dialog_iv_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignRight="@id/dialog_iv_userCode"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/icon_close"/>
+
+    <TextView
+        android:id="@+id/dialog_tv_userPlanName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/dialog_iv_userCode"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/dialog_iv_close"
+        android:text="豆豆的健身计划"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

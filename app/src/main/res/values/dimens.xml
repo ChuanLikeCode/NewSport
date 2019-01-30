@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="toolbar_padding_top">0dp</dimen>
+    <dimen name="divide_height">1dp</dimen>
+    <dimen name="big_title">18sp</dimen>
+    <dimen name="title">16sp</dimen>
+
+    <dimen name="middletitle">13sp</dimen>
+    <dimen name="content">14sp</dimen>
+    <dimen name="middlecontent">12sp</dimen>
+    <dimen name="smallSize">11sp</dimen>
+
+    <dimen name="need15">15sp</dimen>
+    <dimen name="need14">14sp</dimen>
+    <!--每一个横栏间隔-->
+    <dimen name="barHeight">50dp</dimen>
+    <!--文字与左屏幕间隔-->
+    <dimen name="textMagrinLeft">20dp</dimen>
+    <!--下划线与左屏幕间隔-->
+    <dimen name="divideMagrinLeft">20dp</dimen>
+    <!--下划线与右屏幕间隔-->
+    <dimen name="divideMagrinRight">20dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

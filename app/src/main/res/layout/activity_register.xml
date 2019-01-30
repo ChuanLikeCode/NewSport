@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg">
+
+
+    <include
+        android:id="@+id/register_title"
+        layout="@layout/actionbar_top" />
+
+    <RelativeLayout
+        android:id="@+id/activity_register_rlAccountAndPassword"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@id/register_title"
+        android:layout_marginTop="15dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_account"
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/icon_mobilephone" />
+
+        <View
+            android:id="@+id/view1_vertical"
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/iv_account"
+            android:background="@color/light_gray" />
+
+
+        <EditText
+            android:id="@+id/register_et_account"
+            android:layout_width="250dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@+id/view1_vertical"
+            android:background="@null"
+            android:hint="@string/input_phone"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_hint_dark"
+            android:textSize="15sp" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/cancel_number"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignTop="@id/register_et_account"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:src="@mipmap/icon_close" />-->
+        <View
+            android:id="@+id/view1_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignStart="@id/view1_vertical"
+            android:layout_below="@id/register_et_account"
+            android:layout_marginTop="15dp"
+            android:background="@color/light_white" />
+
+
+        <ImageView
+            android:id="@+id/iv_password"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_alignStart="@id/iv_account"
+            android:layout_below="@id/view1_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/icon_password" />
+
+        <View
+            android:id="@+id/view2_vertical"
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@id/view1_horizontal"
+            android:layout_below="@id/view1_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/iv_password"
+            android:background="@color/light_gray" />
+
+        <EditText
+            android:id="@+id/register_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_alignStart="@id/register_et_account"
+            android:layout_below="@id/view1_horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/view2_vertical"
+            android:background="@null"
+            android:hint="@string/input_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_hint_dark"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view2_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignStart="@id/view2_vertical"
+            android:layout_below="@id/register_et_password"
+            android:layout_marginTop="15dp"
+            android:background="@color/light_white" />
+
+        <ImageView
+            android:id="@+id/iv_identify"
+            android:layout_width="15dp"
+            android:layout_height="21dp"
+            android:layout_alignStart="@id/iv_password"
+            android:layout_below="@id/view2_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/icon_code" />
+
+        <View
+            android:id="@+id/view3_vertical"
+            android:layout_width="0.5dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@id/view2_horizontal"
+            android:layout_below="@id/view2_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/iv_identify"
+            android:background="@color/light_gray" />
+
+
+        <EditText
+            android:id="@+id/et_identify"
+            android:layout_width="150dp"
+            android:layout_height="28dp"
+            android:layout_alignStart="@id/register_et_account"
+            android:layout_below="@id/view2_horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/view2_vertical"
+            android:background="@null"
+            android:hint="@string/input_verification_code"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_hint_dark"
+            android:textSize="15sp" />
+        
+        <Button
+            android:id="@+id/takeIndentify"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/view2_horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:onClick="getTestCode"
+            android:background="@drawable/login_btn_background"
+            android:text="获取验证码"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/login_btn_background"
+        android:text="注册"
+        android:onClick="goRegister"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/activity_register_rlAccountAndPassword"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/tv_gotoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/btn_register"
+        android:layout_below="@+id/btn_register"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goLogin"
+        android:text="@string/registe_hint"
+        android:textColor="@color/gray_hint"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

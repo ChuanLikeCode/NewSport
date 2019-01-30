@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lime_white"
+    tools:context=".ui.BodyjudgmentActivity">
+
+    <include
+        android:id="@+id/bodyTitle"
+        layout="@layout/activity_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_selectBody"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/bodyTitle"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:text="@string/selectBody"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/selectBody_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:checked="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bodyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_selectBody"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/tv_bodyLabel1"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bodylabel_select"
+            android:gravity="center"
+            android:text="@string/BodyLabel1"
+            android:textColor="@drawable/bodylabel_text_select"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_bodyLabel2"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bodylabel_select"
+            android:gravity="center"
+            android:text="@string/BodyLabel2"
+            android:textColor="@drawable/bodylabel_text_select"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_bodyLabel3"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bodylabel_select"
+            android:gravity="center"
+            android:text="@string/BodyLabel3"
+            android:textColor="@drawable/bodylabel_text_select"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_bodyLabel4"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/tv_bodyLabel1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bodylabel_select"
+            android:gravity="center"
+            android:text="@string/BodyLabel4"
+            android:textColor="@drawable/bodylabel_text_select"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_bodyLabel5"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/tv_bodyLabel2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bodylabel_select"
+            android:gravity="center"
+            android:text="@string/BodyLabel5"
+            android:textColor="@drawable/bodylabel_text_select"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_bodyLabel6"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_bodyLabel3"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bodylabel_select"
+            android:gravity="center"
+            android:text="@string/BodyLabel6"
+            android:textColor="@drawable/bodylabel_text_select"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_bodyLabel7"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/tv_bodyLabel4"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bodylabel_select"
+            android:gravity="center"
+            android:text="@string/BodyLabel7"
+            android:textColor="@drawable/bodylabel_text_select"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_bodyLabel8"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/tv_bodyLabel5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bodylabel_select"
+            android:gravity="center"
+            android:text="@string/BodyLabel8"
+            android:textColor="@drawable/bodylabel_text_select"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bodyLabelByYourself"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_bodyLabel"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_ziding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/BodyLabelByYourself"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_bodySetYourself"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/tv_ziding"
+            android:layout_below="@id/tv_ziding"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bodysetyourself_background"
+            android:gravity="center"
+            android:hint="@string/BodyEditHint"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</RelativeLayout>

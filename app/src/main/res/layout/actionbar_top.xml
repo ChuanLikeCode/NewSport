@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/title"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/top_rl_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="backClick">
+
+        <ImageView
+            android:id="@+id/top_iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/top_rl_right"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp">
+        <TextView
+            android:id="@+id/top_tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="新建"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/title"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/top_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/title" />
+
+     <include layout="@layout/divide_line"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

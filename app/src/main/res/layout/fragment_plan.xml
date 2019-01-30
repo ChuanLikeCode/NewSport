@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="@color/title" />
+    <include
+        android:id="@+id/plan_icd"
+        layout="@layout/activity_make_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view" />
+    <TextView
+        android:id="@+id/makePlanFragment_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="还没有健身计划\n赶快找个教练吧~"
+        android:textColor="@color/gray_hint"
+        android:textSize="16sp"/>
+    <com.sibo.fastsport.view.WhorlView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="110dp"
+        app:WhorlView_BigWhorlColor="@color/turquoise"
+        app:WhorlView_CircleSpeed="270"
+        app:WhorlView_MiddleWhorlColor="@color/turquoise"
+        app:WhorlView_Parallax="fast"
+        app:WhorlView_SmallWhorlColor="@color/turquoise"
+        app:WhorlView_StrokeWidth="7"
+        app:WhorlView_SweepAngle="180" />
+
+    <include
+        layout="@layout/actionbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/view" />
+
+    <ImageView
+        android:id="@+id/scanner"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/ck_sys_icon_11" />
+</RelativeLayout>
