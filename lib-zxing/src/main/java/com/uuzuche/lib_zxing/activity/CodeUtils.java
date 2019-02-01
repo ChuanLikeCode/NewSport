@@ -30,6 +30,7 @@ import java.util.Vector;
 /**
  * Created by aaron on 16/7/27.
  * 二维码扫描工具类
+ * 
  */
 public class CodeUtils {
 
