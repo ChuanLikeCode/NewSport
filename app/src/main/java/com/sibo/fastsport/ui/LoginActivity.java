@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.sibo.fastsport.R;
 import com.sibo.fastsport.application.Constant;
 import com.sibo.fastsport.application.MyApplication;
@@ -112,7 +111,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         }
 
     }
-
+    // 检查账户和密码
     private void checkAccountAndPassword() {
         userPhone = userAccount.getText().toString();
         userPassword = userPassWord.getText().toString();

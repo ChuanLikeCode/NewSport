@@ -74,6 +74,7 @@ public class ActionDetailsActivity extends BaseActivity {
         title.setText(R.string.actionDetails);
         wancheng.setVisibility(View.GONE);
         close.setVisibility(View.GONE);
+
         setDetails();
     }
 
@@ -90,11 +91,14 @@ public class ActionDetailsActivity extends BaseActivity {
                 .placeholder(R.mipmap.loading)
                 .centerCrop()
                 .error(R.drawable.failed).into(img);
+
         part.setText(sd.getExercise_part());
         equipment.setText(sd.getNeed_equipment());
+        
         for (int j = 0; j < sn.getLevel(); j++) {
             level[j].setVisibility(View.VISIBLE);
         }
+
         details.setText(sd.getDetail());
     }
 }
