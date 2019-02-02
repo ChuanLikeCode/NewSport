@@ -17,8 +17,6 @@ public class BaseApplication extends MultiDexApplication {
         super.onCreate();
         instance = this;
 
-
-
     }
 
 
@@ -41,7 +39,6 @@ public class BaseApplication extends MultiDexApplication {
     {
         if (null == instance)
             throw new RuntimeException("BaseApplication cannot registered!");
-
         return instance;
     }
 
