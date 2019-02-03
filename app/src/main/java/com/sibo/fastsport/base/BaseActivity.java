@@ -28,7 +28,9 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.List;
 
-
+/**
+ * ceshi
+ */
 public abstract class BaseActivity extends AppCompatActivity {
     protected FragmentManager fragmentManager;
     protected Context mContext;

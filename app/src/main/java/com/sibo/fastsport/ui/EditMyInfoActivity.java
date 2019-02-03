@@ -74,7 +74,8 @@ public class EditMyInfoActivity extends BaseActivity implements ActionSheet.OnSh
     private String[] items = {"拍照", "我的相册"};
     // 头像文件、上传头像的名称、本地图片uri
     private File imageFile;
-    private Uri imageUri; // 图片路径
+    // 图片路径
+    private Uri imageUri; 
 
     @Override
     protected void findViewByIDS() {
@@ -127,12 +128,14 @@ public class EditMyInfoActivity extends BaseActivity implements ActionSheet.OnSh
         save.setText("保存");
         save.setVisibility(View.VISIBLE);
         title.setText("编辑个人信息");
+        
         phone.setText(loginuser.getAccount());
         pick_age = new ArrayList<>();
         pick_height = new ArrayList<>();
         pick_weight = new ArrayList<>();
         pick_sex = new ArrayList<>();
         pick_jiaoling = new ArrayList<>();
+        
         for (int i = 0; i < 121; i++) {
             String j = i + 30 + "KG";
             Pickers pickers = new Pickers();
@@ -140,6 +143,7 @@ public class EditMyInfoActivity extends BaseActivity implements ActionSheet.OnSh
             pickers.setShowConetnt(j);
             pick_weight.add(pickers);
         }
+
         for (int i = 0; i < 71; i++) {
             String j = i + 150 + "CM";
             Pickers pickers = new Pickers();
@@ -147,6 +151,7 @@ public class EditMyInfoActivity extends BaseActivity implements ActionSheet.OnSh
             pickers.setShowConetnt(j);
             pick_height.add(pickers);
         }
+
         for (int i = 0; i < 101; i++) {
             String j = i + "岁";
             Pickers pickers = new Pickers();
@@ -154,6 +159,7 @@ public class EditMyInfoActivity extends BaseActivity implements ActionSheet.OnSh
             pickers.setShowConetnt(j);
             pick_age.add(pickers);
         }
+
         for (int i = 0; i < 101; i++) {
             String j = i + "年";
             Pickers pickers = new Pickers();
@@ -161,7 +167,9 @@ public class EditMyInfoActivity extends BaseActivity implements ActionSheet.OnSh
             pickers.setShowConetnt(j);
             pick_jiaoling.add(pickers);
         }
+
         String[] str1 = {"男", "女"};
+
         for (int i = 0; i < 2; i++) {
             Pickers pickers = new Pickers();
             pickers.setShowId(i + "");

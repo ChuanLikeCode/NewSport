@@ -24,18 +24,18 @@ import java.util.List;
 
 public class WxCollectedActivity extends BaseActivity implements AdapterView.OnItemClickListener {
 
-    //收藏的集合
+    // 收藏的集合
     public static List<MyCollections> collectionList = new ArrayList<>();
-    //标题栏控件
+    // 标题栏控件
     private ImageView back;
     private TextView title;
-    //ListView控件
+    // ListView控件
     private ListView listView;
-    //进度条控件
+    // 进度条控件
     private WhorlView whorlView;
-    //适配器
+    // 适配器
     private MyCollectionAdapter adapter;
-    //提示文字
+    // 提示文字
     private TextView tips;
     public Handler handler = new Handler(){
         @Override
