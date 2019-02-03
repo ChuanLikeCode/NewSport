@@ -10,7 +10,7 @@ import com.sibo.fastsport.utils.MyBombUtils;
 
 /**
  * 扫码获得健身计划
- * Created by zhouchuan on 2017/3/2.
+ * Created by zhouchuan on 2019.2.2
  */
 
 public class MyBroadcastReceiver extends BroadcastReceiver {
