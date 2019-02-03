@@ -24,6 +24,3 @@
 
 ## 目前实现功能的APP操作视频
 
-<video id="video" controls="" preload="none" poster="./another/img/simon-hajducki-1321456-unsplash.jpg">
-   <source id="mp4" src="./another/video/%E5%BD%95%E5%B1%8F.mp4" type="video/mp4">
-</video>
