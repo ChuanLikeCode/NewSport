@@ -22,5 +22,6 @@
 * [ ] 绑定健身公众号信息，可浏览
 * [ ] 用户可收藏浏览文章
 
-## 目前实现功能的APP操作视频
+## 目前实现功能的APP操作部分截图
+<img src="./another/img/276175b21049a4b22ef6885a01e4332.jpg" width = "500" height = "700" alt="图片名称" align=center />
 
