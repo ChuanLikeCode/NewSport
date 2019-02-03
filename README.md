@@ -23,4 +23,4 @@
 * [ ] 用户可收藏浏览文章
 
 ## 目前实现功能的APP操作视频
-[![ScreenShot](./another/img/brittani-burns-1335551-unsplash.jpg)](another/video/video.mp4)
+[![ScreenShot](./another/img/brittani-burns-1335551-unsplash.jpg)](./another/video/video.mp4)
