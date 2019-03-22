@@ -19,7 +19,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginRight="20dp"
             android:layout_marginTop="40dp"
-            android:visibility="gone"
+
             android:src="@mipmap/set" />
 
         <com.sibo.fastsport.view.CircleImageView
@@ -252,7 +252,7 @@
         android:id="@+id/myhomemenu_rl_myhome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
+
         android:layout_marginTop="8dp"
         android:background="@color/white">
 
@@ -281,6 +281,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
+
         android:layout_marginTop="8dp"
         android:background="@color/white">
 
