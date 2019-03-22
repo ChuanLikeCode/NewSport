@@ -1,6 +1,21 @@
 {
     "logs": [
         {
+            "outputFile": "F:\\MyProjects\\NewSport\\pulltorefresh\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-ro\\values-ro.xml",
+            "map": [
+                {
+                    "source": "F:\\MyProjects\\NewSport\\pulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values-ro\\values-ro.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,139,211",
+                        "endColumns": "83,71,91",
+                        "endOffsets": "134,206,298"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "D:\\workspace1\\NewSport\\pulltorefresh\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-ro\\values-ro.xml",
             "map": [
                 {

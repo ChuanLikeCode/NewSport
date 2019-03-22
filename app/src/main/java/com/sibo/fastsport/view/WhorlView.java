@@ -16,7 +16,7 @@ import com.sibo.fastsport.R;
 /**
  * 类似螺纹的加载view<br></>
  * 可以自定义的属性：颜色、旋转速度（X弧度/s）<p/>
- * Created by Kyson on 2015/8/9.<br>
+ * Created by Kyson on 2019/1/9.<br>
  * www.hikyson.cn<br>
  */
 public class WhorlView extends View {

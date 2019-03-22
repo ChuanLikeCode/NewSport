@@ -3,10 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NewSport.iml" filepath="$PROJECT_DIR$/NewSport.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lib-zxing/lib-zxing.iml" filepath="$PROJECT_DIR$/lib-zxing/lib-zxing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/loopview/loopview.iml" filepath="$PROJECT_DIR$/loopview/loopview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" />
     </modules>
   </component>
 </project>

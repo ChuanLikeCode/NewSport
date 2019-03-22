@@ -1,6 +1,21 @@
 {
     "logs": [
         {
+            "outputFile": "F:\\MyProjects\\NewSport\\pulltorefresh\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
+            "map": [
+                {
+                    "source": "F:\\MyProjects\\NewSport\\pulltorefresh\\build\\intermediates\\bundles\\debug\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,131,204",
+                        "endColumns": "75,72,80",
+                        "endOffsets": "126,199,280"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "D:\\workspace1\\NewSport\\pulltorefresh\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
             "map": [
                 {

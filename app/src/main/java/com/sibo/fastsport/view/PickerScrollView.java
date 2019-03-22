@@ -23,7 +23,7 @@ import java.util.TimerTask;
 /**
  * 自定义滚动选择器
  *
- * @author zengtao 2015年5月20日 下午7:36:03
+ * @author zengtao
  */
 @SuppressLint({"HandlerLeak", "ClickableViewAccessibility"})
 public class PickerScrollView extends View {
