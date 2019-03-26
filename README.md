@@ -11,7 +11,7 @@
 ## 实现功能
 项目管理截图
 
-<img src="./another/img/Trello项目管理截图.jpg" width = "700" height = "400" alt="图片名称" align=center />
+<img src="./another/img/Trello.png" alt="图片名称" align=center />
 
 ### 概要功能模块
 * [x] 登陆注册模块，验证账号，接受验证码
@@ -21,7 +21,4 @@
   * 学员扫描教练二维码获得健身计划
   * 教练制定计划，日期滚动条-动作类型列表-查看详情页
 
-
-## 目前实现功能的APP操作部分截图
-<img src="./another/img/276175b21049a4b22ef6885a01e4332.jpg" width = "500" height = "700" alt="图片名称" align=center />
 
