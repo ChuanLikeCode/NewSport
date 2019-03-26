@@ -11,7 +11,7 @@
 ## 实现功能
 项目管理截图
 
-<img src="./another/img/Trello项目管理截图.jpg" width = "700" height = "400" alt="图片名称" align=center />
+<img src="./another/img/Trello.png" width = "700" height = "400" alt="图片名称" align=center />
 
 ### 概要功能模块
 * [x] 登陆注册模块，验证账号，接受验证码
